@@ -1,0 +1,9 @@
+# Core dependencies
+torchvision==0.19.1
+torch==2.4.1
+numpy==1.26.4
+opencv-python==4.8.1.78
+paho-mqtt
+flask
+
+# pip install -r requirements.txt

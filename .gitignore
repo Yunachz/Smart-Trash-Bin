@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# Screenshots dari script inference
+screenshot_*.jpg
+
+# Arduino / PlatformIO build artifacts
+*.hex
+*.bin
+.pio/
+build/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Environment / secrets (kalau nanti kamu pisahkan config ke file .env atau config.h)
+.env
+config.h
+secrets.h
