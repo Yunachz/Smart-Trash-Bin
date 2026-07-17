@@ -53,6 +53,10 @@ smart-trash-bin/
 │   └── app.py                        # Flask web server for the volume monitoring dashboard
 ├── models/
 │   └── garbage_classifier_best.pt    # Trained model checkpoint (EfficientNet-B3)
+│   └── class_names.json
+│   └── garbage_classifier.onnx       # onnx
+│   └── garbage_classifier.onnx.data
+│   └── metadata.json
 └── docs/
     ├── block-diagram.png
     ├── wiring-diagram.png
