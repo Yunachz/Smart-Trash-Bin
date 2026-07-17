@@ -152,4 +152,4 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 🙋 Contributors
 
-- Your Name — [GitHub](https://github.com/Yunachz)
+- Yunachz — [GitHub](https://github.com/Yunachz)
