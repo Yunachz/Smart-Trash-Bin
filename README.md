@@ -110,14 +110,22 @@ allow_anonymous true
 ### 2. ESP32 Firmware
 1. Open `firmware/smart-trash-bin-esp32.ino` in the Arduino IDE.
 2. Install the required libraries: `PubSubClient`, `ESP32Servo`.
-3. **Update the WiFi credentials, MQTT broker IP, and Flask server IP** to match your own network (see the ⚠️ Configuration section below).
+3. **Update the WiFi credentials, MQTT broker IP, and Flask server IP** to match your own network.
 4. Upload the sketch to your ESP32 board.
 
 ### 3. Vision / Inference (PC)
+1. Create python venv and activate
 ```bash
 python -m venv .venv
 .venv\Scripts\Activate.ps1
+```
+2. Install requirements library
+```bash
 pip install -r requirements.txt
+```
+3.  **Update the MQTT broker IP** to match your own network
+4.  Run the python inference program
+```bash
 python vision/inference.py --model garbage_classifier_best.pt --absence-timeout 0.8 --conf 0.6 --roi 1 --smooth 20 --warmup 0.5 --min-stable 14 --blur-threshold 10 --camera 1
 ```
 
